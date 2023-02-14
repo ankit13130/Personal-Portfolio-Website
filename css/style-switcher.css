@@ -1,0 +1,79 @@
+.switch-toggler{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: var(--bg-color-100);
+    border: 1px solid var(--bg-color-50);
+    width: 200px;
+    transform: translateX(100%);
+    z-index: 9999;
+    transition: all ease 0.5s;
+}
+
+.switch-toggler .s-icon{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--bg-color-50);
+    background-color: var(--bg-color-100);
+    color: var(--text-color-900);
+    cursor: pointer;
+}
+
+.switch-toggler .s-icon i{
+    /* line-height: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-toggler .day-night{
+    top: 40px;
+}
+
+.switch-toggler h4{
+    /* font-size: 18px; */
+    text-align: center;
+    font-weight: 800;
+    color: var(--text-color-900);
+    text-transform: uppercase;
+}
+
+.switch-toggler .color-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}   
+
+.switch-toggler .color-container span{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-container .color-1{
+    background-color: #ec1839;
+}
+
+.color-container .color-2{
+    background-color: #18ec2a;
+}
+
+.color-container .color-3{
+    background-color: #4618ec;
+}
+
+.color-container .color-4{
+    background-color: #e518ec;
+}
+
+.color-container .color-5{
+    background-color: #ec6618;
+}
