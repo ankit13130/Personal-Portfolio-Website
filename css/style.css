@@ -733,6 +733,25 @@ a {
     height: 140px;
 }
 
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--skin-color);
+    color: var(--text-color-700);
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#backToTopBtn:hover {
+    color: var(--bg-color-900);
+    background-color: var(--text-color-900);
+}
+
 @media (max-width:1220px) {
     .aside {
         left: -270px;

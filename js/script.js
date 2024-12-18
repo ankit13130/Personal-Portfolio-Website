@@ -35,4 +35,19 @@ document.getElementById('age').innerText = Math.floor((new Date() - new Date('20
 //       document.getElementById('age').innerText = Math.floor((serverDate - new Date('2002/03/03')) / MS_IN_YEAR);
 //   })
 //   .catch(error => console.error('Error fetching NTP time:', error));
-  
+
+// When the user scrolls down 100px from the top, show the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+// When the user clicks the button, scroll to the top
+backToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
