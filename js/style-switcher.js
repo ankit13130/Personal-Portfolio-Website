@@ -4,13 +4,21 @@ const switchBtn = document.querySelector('.switch-toggler-style')
 
 var toggleTheme = false
 
-switchBtn.addEventListener('click', () => {
+switchBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     toggleTheme = !toggleTheme;
     container.style.transform = toggleTheme ? "translateX(0%)" : "translateX(100%)";
 });
 
 // hide style -switcher on scroll or click in window
 window.addEventListener('scroll', () => {
+    if (toggleTheme){
+        toggleTheme = !toggleTheme;
+        container.style.transform = "translateX(100%)";
+    }
+})
+
+window.addEventListener('click', () => {
     if (toggleTheme){
         toggleTheme = !toggleTheme;
         container.style.transform = "translateX(100%)";

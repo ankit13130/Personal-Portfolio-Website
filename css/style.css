@@ -816,4 +816,9 @@ a {
         max-width: 50%;
         white-space: nowrap;
     }
+
+    #backToTopBtn:hover {
+        color: var(--bg-color-900);
+        background-color: var(--skin-color);
+    }    
 }
